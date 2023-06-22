@@ -1,0 +1,34 @@
+.config/nvim/
+├── after			-- last files loaded, "after" global and plugin settings
+│   ├── ftplugin		-- specific file type settings, loaded after after/plugin 
+│   └── plugin			-- plugin settings to avoid being overwritten
+│       └── testprint.lua	-- testing init-lua structure using print statements
+├── init.lua			-- start point of neovim lua config
+├── lua				-- folder contains settings, plugin management and plugin settings
+│   ├── packer.lua		-- file to manage plugin manager and install/manage plugins
+│   ├── plugins			-- setup and settings for plugins (prefer lua plugins)
+│   └── settings		-- global settings replace init.vim
+│       ├── colors.lua		-- colorscheme settings
+│       ├── keymaps.lua		-- keymaps that make this neovim my neovim
+│       └── options.lua		-- setting for neovim options (and some notes on defaults)
+├── old-init.vim		-- my old init.vim, good comments, not well maintained
+└── tree			-- this file!
+
+INFO
+-- init.lua is the start point for neovim config, "requires" other files
+-- The lua folder replaces old init.vim, split into sensible chunks - options, keymaps, color, plugins
+-- The after folder ensures the things that should be loaded last are loaded last
+
+NOTES
+-- Avoids a superfluous "layer" in the file structure
+-- Hopefully self explanatory (meaningful file names)
+-- This config contains print functions to prove that this file structure works
+-- If you run this as a neovim config you get print statements in correct order
+-- Obviously remove the print commands and add your neovim config!
+-- Uses "after" folder in a traditional vim way
+-- Old init.vim ncuded, worked for me, but I didnt maintain it, I worked with it and around it
+-- Plan to learn neovim better by developing this config and trying new stuff
+-- Keeps neovim with lua config sane
+-- Keeps me sane
+
+7 directories, 8 files
