@@ -1,2 +1,2 @@
-print("hello from keymaps.lua")
+-- REMAP KEYS TO MAKE THIS NEOVIM MY NEOVIM
 
