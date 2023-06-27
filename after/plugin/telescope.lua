@@ -6,7 +6,8 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 -- See Built In Pickers ( builtin.xxx_xxxxx ) to extend
--- TODO Which Key mapping looks good (see READ.ME)
+-- DONE Which Key mapping for telescope builtins looks good (see READ.ME)
+-- TODO WhichKey Plugin for Which Key globally in Neovim 
 
 require('telescope').setup{
   defaults = {
@@ -38,3 +39,6 @@ require('telescope').setup{
     -- please take a look at the readme of the extension you want to configure
   }
 }
+
+-- TODO Set up previews
+
