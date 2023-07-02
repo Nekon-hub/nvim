@@ -28,7 +28,7 @@ vim.opt.softtabstop = 4			-- also applies when editing
 vim.opt.expandtab = true		-- a TAB is now ACTUALLY four spaces!
 vim.opt.shiftwidth = 4			-- "normal" tab shift is 4 spaces 
 -- SMARTTABS
-vim.opt.smarttab = true       -- matches indents for C language
+vim.opt.smarttab = true         -- matches indents for C language
 -- plus INDENTS
 vim.opt.autoindent = true       -- default
 vim.opt.smartindent= true       -- matches indents for C language
@@ -69,9 +69,10 @@ vim.opt.smartcase = true        -- if search contains upper case override ignore
 
 
 -- BACKUP/SWAPFILE/UNDO HISTORY
-vim.opt.swapfile = false    -- swapfiles make you very angry eventually
+vim.opt.swapfile = false    -- swapfiles make you very angry very quickly
 vim.opt.backup = false      -- default writebackup keeps a backup around during write
-vim.opt.undodir = "$XDG_STATE_HOME/nvim/undo//"           -- lists files with undo
+-- vim.opt.undodir = "$XDG_STATE_HOME/nvim/undo//"           -- lists files with undo
+-- TODO This line has played havoc with my filestructure and definitely not working
 vim.opt.undofile = true     -- auto save undo history to an undofile, restore with file
 
 
