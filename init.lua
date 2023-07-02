@@ -5,7 +5,7 @@
 require("plugins")
 
 -- Settings - colors, keymaps and options
--- NB set colorscheme in "options" after colorscheme settings are loaded in colors
+-- NB colorscheme settings are in "colors" but scheme is set in "options" 
 require("settings.colors")
 require("settings.keymaps")
 require("settings.options")
