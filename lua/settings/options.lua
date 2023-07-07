@@ -43,7 +43,6 @@ vim.opt.linebreak = true    	--don't break words
 -- TODO colorcolumn is a horrible color!
 
 -- LINE NUMBERS
-vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- CUSORLINE
