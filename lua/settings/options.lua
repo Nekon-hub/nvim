@@ -39,10 +39,11 @@ vim.opt.smartindent= true       -- matches indents for C language
 -- LINE WRAPPING
 vim.opt.wrap = true     		--default, see .keymap to move within wrapped line
 vim.opt.linebreak = true    	--don't break words
- vim.opt.colorcolumn = "80"
+-- vim.opt.colorcolumn = "80"
 -- TODO colorcolumn is a horrible color!
 
 -- LINE NUMBERS
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- CUSORLINE
