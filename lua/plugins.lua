@@ -43,5 +43,13 @@ use 'aktersnurra/no-clown-fiesta.nvim'
 -- TODO Add in fenetikm/falcon, although rose-pine does good purple
 -- ============
 
+-- LUALINE
+-- Theme and options in /after/plugins/lualine.lua
+use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
+
+
 
 end)

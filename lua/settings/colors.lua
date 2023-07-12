@@ -60,11 +60,12 @@ require('rose-pine').setup({
 	-- Change specific vim highlight groups
 	-- https://github.com/rose-pine/neovim/wiki/Recipes
 	highlight_groups = {
-		ColorColumn = { bg = 'rose' },
+		ColorColumn = { bg = 'foam', blend = 10},
 
 		-- Blend colours against the "base" background
 		CursorLine = { bg = 'foam', blend = 10 },
 		StatusLine = { fg = 'love', bg = 'love', blend = 10 },
+		CursorColumn = { bg = 'foam', blend = 10 },
 	}
 })
 

@@ -1,7 +1,7 @@
--- REMAP KEYS TO MAKE THIS NEOVIM MY NEOVIM
+-- REMAP KEYS MAKES THIS MY NEOVIM
 
 -- EASY RELOAND OF NVIM CONFIG
-vim.keymap.set("n", "<leader>sv", "<cmd>so ~/.config/nvim/init.lua<cr>")
+vim.keymap.set("n", "<leader>vv", "<cmd>so ~/.config/nvim/init.lua<cr>")
 -- TODO not working, something to do with buffers already loaded.
 
 --LEADER
@@ -14,7 +14,7 @@ vim.keymap.set({"i", "v"}, "jk", "<Esc>")
 vim.keymap.set({"i", "v"}, "kj", "<Esc>")
 
 -- Insert lines above or below cursor without moving cursor
-
+-- TODO
 
 
 

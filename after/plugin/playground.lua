@@ -19,3 +19,8 @@ require "nvim-treesitter.configs".setup {
     },
   }
 }
+
+-- KEYMAPS
+-- Toggle PLAYGROUND on and off
+vim.keymap.set("n", "<leader>pt", "<cmd>TSPlaygroundToggle<CR>")
+

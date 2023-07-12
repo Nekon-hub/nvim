@@ -37,17 +37,20 @@ vim.opt.smartindent= true       -- matches indents for C language
 -- default "tab:> ,trail:-,nbsp:+" ?
 
 -- LINE WRAPPING
-vim.opt.wrap = true     		--default, see .keymap to move within wrapped line
-vim.opt.linebreak = true    	--don't break words
--- vim.opt.colorcolumn = "80"
--- TODO colorcolumn is a horrible color!
+vim.opt.wrap = true     		-- default, see keymaps to move within wrapped line
+vim.opt.linebreak = true    	-- don't break words
+vim.opt.colorcolumn = "80"      -- try to stay within 80 chars
+
+-- CURSORLINE and CURSORCOLUMN - be able to spot the cursor quickly
+vim.opt.cursorline = true
+vim.opt.cursorcolumn = true     
+
+-- WINBAR - top right file name and modify status, useful for splits
+vim.cmd[[set winbar=%=%m\ %f]] 
 
 -- LINE NUMBERS
 vim.opt.number = true
 vim.opt.relativenumber = true
-
--- CUSORLINE
-vim.opt.cursorline = true
 
 -- SCROLLING
 vim.opt.scrolloff = 10
@@ -66,13 +69,19 @@ vim.opt.ignorecase = true       -- ignore case of typing and search target
 vim.opt.smartcase = true        -- if search contains upper case override ignorecase
 
 -- FOLDING
+-- I never use folding, there must be a reason that others find it useful!
 
 
 -- BACKUP/SWAPFILE/UNDO HISTORY
 vim.opt.swapfile = false    -- swapfiles make you very angry very quickly
-vim.opt.backup = false      -- default writebackup keeps a backup around during write
--- vim.opt.undodir = "$XDG_STATE_HOME/nvim/undo//"           -- lists files with undo
--- TODO This line has played havoc with my filestructure and definitely not working
-vim.opt.undofile = true     -- auto save undo history to an undofile, restore with file
+vim.opt.backup = false      -- default writebackup keeps a backup during write
+vim.opt.undofile = true     -- autosave undo history to undofile, restore with file
 
+-- COMMENTS
+-- Neovim adds new line comment symbols after every <CR> at EOL
+-- Similarly, "o" in N to insert a new line and start typing, comment symbols added.
+-- its a frustration that needs a better solution (more elegant) than I have here...
+vim.cmd[[set formatoptions-=r]]
+vim.cmd[[set formatoptions-=o]]
+-- But for now this works. TODO Needs to be based on a filetype list or similar
 
