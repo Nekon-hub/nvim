@@ -1,8 +1,7 @@
 -- Setting Neovim's built-in options
 
 -- GENERAL NEOVIM DEFAULTS 
--- I like to know these are set to my liking,
--- after setting these in .vimrc and init.vim for so long!
+-- I like to know these are set to my liking,after setting these in .vimrc and init.vim for so long!
 -- encoding = UTF-8
 -- compatible = false
 -- syntax = true
@@ -44,6 +43,8 @@ vim.opt.colorcolumn = "80"      -- try to stay within 80 chars
 -- CURSORLINE and CURSORCOLUMN - be able to spot the cursor quickly
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = true     
+-- Get a Fat Cursor, because its what I always knew
+vim.opt.guicursor = ""
 
 -- WINBAR - top right file name and modify status, useful for splits
 vim.cmd[[set winbar=%=%m\ %f]] 
@@ -51,9 +52,11 @@ vim.cmd[[set winbar=%=%m\ %f]]
 -- LINE NUMBERS
 vim.opt.number = true
 vim.opt.relativenumber = true
+-- SIGNCOLUMN
+vim.opt.signcolumn = "yes"
 
 -- SCROLLING
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 8
 
 -- PARENTHESIS
 vim.opt.showmatch = true
