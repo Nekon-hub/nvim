@@ -65,7 +65,7 @@ require('rose-pine').setup({
 		-- Blend colours against the "base" background
 		CursorLine = { bg = 'foam', blend = 10 },
 		StatusLine = { fg = 'love', bg = 'love', blend = 10 },
-		CursorColumn = { bg = 'foam', blend = 10 },
+		CursorColumn = { bg = 'foam', blend = 10},
 	}
 })
 

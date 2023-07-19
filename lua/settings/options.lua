@@ -1,7 +1,8 @@
 -- Setting Neovim's built-in options
 
 -- GENERAL NEOVIM DEFAULTS 
--- I like to know these are set to my liking,after setting these in .vimrc and init.vim for so long!
+-- I wanted to understand what the important default settings are...
+
 -- encoding = UTF-8
 -- compatible = false
 -- syntax = true
@@ -10,16 +11,17 @@
 -- hidden = true (allows unsaved work in buffers)	 
 -- wildmenu = true (list of options on <TAB>completions)
 -- lazyredraw =false (not required in Neovim??)
---
 
--- ================
+
+-- =====================
 -- SOME UI SETTINGS 
--- ================
--- Gotta be looking good!
+-- Gotta be looking good
+-- and working smart!
+-- =====================
 
 -- COLORSCHEME
 vim.opt.termguicolors = true
-vim.cmd[[colorscheme rose-pine-moon]] 
+vim.cmd [[colorscheme rose-pine-moon]] 
 
 -- TABS AND SPACES
 vim.opt.tabstop = 4 			-- 4 spaces to a TAB
@@ -34,6 +36,7 @@ vim.opt.smartindent= true       -- matches indents for C language
 
 -- TODO -- BLANK CHARACTERS
 -- default "tab:> ,trail:-,nbsp:+" ?
+-- TODO Command to remove trailing whitespace on write
 
 -- LINE WRAPPING
 vim.opt.wrap = true     		-- default, see keymaps to move within wrapped line
@@ -47,7 +50,7 @@ vim.opt.cursorcolumn = true
 vim.opt.guicursor = ""
 
 -- WINBAR - top right file name and modify status, useful for splits
-vim.cmd[[set winbar=%=%m\ %f]] 
+vim.cmd [[set winbar=%=%m\ %f]] 
 
 -- LINE NUMBERS
 vim.opt.number = true
@@ -74,17 +77,16 @@ vim.opt.smartcase = true        -- if search contains upper case override ignore
 -- FOLDING
 -- I never use folding, there must be a reason that others find it useful!
 
-
 -- BACKUP/SWAPFILE/UNDO HISTORY
 vim.opt.swapfile = false    -- swapfiles make you very angry very quickly
 vim.opt.backup = false      -- default writebackup keeps a backup during write
 vim.opt.undofile = true     -- autosave undo history to undofile, restore with file
 
--- COMMENTS
+-- TODO - COMMENTS - This appears to work intermittently.
+vim.cmd [[set formatoptions-=r]]
+vim.cmd [[set formatoptions-=o]]
+-- Somthing to do with not overwriting buffer? Works after straight ":so"
 -- Neovim adds new line comment symbols after every <CR> at EOL
--- Similarly, "o" in N to insert a new line and start typing, comment symbols added.
--- its a frustration that needs a better solution (more elegant) than I have here...
-vim.cmd[[set formatoptions-=r]]
-vim.cmd[[set formatoptions-=o]]
--- But for now this works. TODO Needs to be based on a filetype list or similar
+-- But when it works its very laggy which means this is NOT and elegant solution anyway.
+
 
