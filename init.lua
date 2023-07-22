@@ -2,7 +2,7 @@
 
 -- Thanks to DT, Doug Black, Ellen Gummeson, Daniel Miessler, Drew Neil et al in the vimrc and init.vim days.
 -- Thanks to Primeagen, TJ, Bashbunni, Asbjorn Haaland and others for promoting a Lua-Life.
--- When switching to Lua based config, the best advise I can offer is "RTFM"
+-- When switching to Lua based config, the best advice I can offer is "RTFM"
 -- https://neovim.io/doc/user/index.html
 -- https://neovim.io/doc/user/lua.html
 -- ":h" is your friend.
