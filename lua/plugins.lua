@@ -24,7 +24,7 @@ use {
             ts_update()
         end,
 }
--- Plus TREESITTER PLAYGROUND
+
 use 'nvim-treesitter/playground'
 
 

@@ -10,7 +10,7 @@ vim.keymap.set("n", "<leader>vv", "<cmd>so ~/.config/nvim/init.lua<cr>")
 
 -- ESCAPE - JJ, KK and the JK/KJ roll
 vim.keymap.set({"i", "v"}, "jj", "<Esc>")
--- vim.keymap.set({"i", "v"}, "kk", "<Esc>" -- Sod's Law... some Finnish names have "kk"
+-- vim.keymap.set({"i", "v"}, "kk", "<Esc>" -- Sod's Law... some Finnish violinists have "kk"
 vim.keymap.set({"i", "v"}, "jk", "<Esc>")
 vim.keymap.set({"i", "v"}, "kj", "<Esc>")
 
@@ -37,8 +37,12 @@ vim.keymap.set('n', 'oo', "<Cmd>call append(line('.'),     repeat([''], v:count1
 vim.keymap.set("n", "<leader>ho", "<cmd>noh<cr>")
 -- When replacing highlighted word, DON'T overwrite the paste buffer!
 vim.keymap.set("x", "<leader>p", "\"_dP")
+-- Similar for deleting to void register
 vim.keymap.set("n", "<leader>d", "\"_d")
 vim.keymap.set("v", "<leader>d", "\"_d")
+-- When searching, keep search terms in the middle of page
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "n", "Nzzzv")
 
 -- Quick fix of movements going through errors as highlighted text
 vim.keymap.set("n", "<C-j>", "<cmd>cNext<CR>zz") 
