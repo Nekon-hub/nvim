@@ -16,7 +16,7 @@ require('telescope').setup{
     mappings = {
       i = {
         -- map actions.which_key to <C-h> (default: <C-/>)
-        -- actions.which_key shows the mappings for your picker,
+        -- actions.which_key shows the mappings for your picker,fzf --version
         -- e.g. git_{create, delete, ...}_branch for the git_branches picker
         ["<C-h>"] = "which_key"
       }
@@ -40,5 +40,9 @@ require('telescope').setup{
   }
 }
 
--- TODO Set up previews
+-- TODO Be able to open all selected files in the quickfix list after toggle select ((<Shift>)<TAB>)
+-- Couple of solutions found, one includes (v)splits, the other is simpler.
+-- A fuller solution is currently WIP (27/07/2023) with TJ.
+-- Telescope file explorer also offers a route to solve this.
+
 

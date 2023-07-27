@@ -97,3 +97,8 @@ vim.g.nord_bold = false
 
 -- See READ.me for other settings eg: Lualine and Bufferline
 
+
+-- VIM-SUBSTRATA
+-- TODO requires a lualine theme!
+
+

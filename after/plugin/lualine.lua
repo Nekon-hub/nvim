@@ -2,7 +2,8 @@ require('lualine').setup {
   options = {
     icons_enabled = true,
     -- Available themes:- nord | rose-pine | rose-pine-alt
-    theme = 'rose-pine-alt',
+    -- theme = 'rose-pine-alt',
+    theme = 'auto',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {

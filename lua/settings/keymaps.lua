@@ -5,7 +5,7 @@ vim.g.mapleader = " "
 
 -- EASY RELOAD OF NVIM CONFIG
 vim.keymap.set("n", "<leader>vv", "<cmd>so ~/.config/nvim/init.lua<cr>")
--- TODO not working, something to do with buffers already loaded.
+-- TODO intermittent working, something to do with buffers already loaded.
 -- Possibly the greatest mystery in Neovim. HINT Plenary has a RELOAD function
 
 -- ESCAPE - JJ, KK and the JK/KJ roll

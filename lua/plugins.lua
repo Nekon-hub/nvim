@@ -24,7 +24,7 @@ use {
             ts_update()
         end,
 }
-
+-- Plus TREESITTER PLAYGROUND
 use 'nvim-treesitter/playground'
 
 
@@ -39,17 +39,21 @@ use({ 'rose-pine/neovim', as = 'rose-pine' })
 
 -- NO CLOWN FIESTA
 use 'aktersnurra/no-clown-fiesta.nvim'
--- TODO Add in sainnhe/everforest or mcchish/zenbone with evergreen variant
--- TODO Add in fenetikm/falcon, although rose-pine does good purple
+
+-- VIM-SUBSTRATA
+use 'lunacookies/vim-substrata'
+-- set termguicolors " Only needed in terminals (24-bit colors)
+-- colorscheme substrata
+
+
+-- todo add in sainnhe/everforest or mcchish/zenbone with evergreen variant
+-- todo add in fenetikm/falcon, although rose-pine does good purple
 -- ============
 
--- LUALINE
--- Theme and options in /after/plugins/lualine.lua
+
+-- lualine
 use {
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
-
-
-
 end)

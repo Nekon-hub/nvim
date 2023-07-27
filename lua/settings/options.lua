@@ -6,11 +6,12 @@
 -- encoding = UTF-8
 -- compatible = false
 -- syntax = true
+-- &
 -- filetype settings (detect, plugin, indent) on, but uses Treesitter/LSP
 -- autoread  = true (reload files modified outside of buffer)
 -- hidden = true (allows unsaved work in buffers)	 
--- wildmenu = true (list of options on <TAB>completions)
--- lazyredraw =false (not required in Neovim??)
+-- wildmenu = true (list of options on <TAB> completions)
+-- lazyredraw = false (not required in Neovim??)
 
 
 -- =====================
@@ -21,7 +22,7 @@
 
 -- COLORSCHEME
 vim.opt.termguicolors = true
-vim.cmd [[colorscheme rose-pine-moon]] 
+vim.cmd [[colorscheme substrata]] 
 
 -- TABS AND SPACES
 vim.opt.tabstop = 4 			-- 4 spaces to a TAB
@@ -63,9 +64,6 @@ vim.opt.scrolloff = 8
 
 -- PARENTHESIS
 vim.opt.showmatch = true
-
--- WINBAR
--- TODO Needs a function to evaluate winbar (as statusbar) and echo top right
 
 -- SEARCH SETTINGS
 vim.opt.hlsearch = true         -- highlight search string
