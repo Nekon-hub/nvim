@@ -22,7 +22,7 @@
 
 -- COLORSCHEME
 vim.opt.termguicolors = true
-vim.cmd [[colorscheme substrata]] 
+vim.cmd [[colorscheme substrata]]
 
 -- TABS AND SPACES
 vim.opt.tabstop = 4 			-- 4 spaces to a TAB
@@ -46,12 +46,12 @@ vim.opt.colorcolumn = "80"      -- try to stay within 80 chars
 
 -- CURSORLINE and CURSORCOLUMN - be able to spot the cursor quickly
 vim.opt.cursorline = true
-vim.opt.cursorcolumn = true     
+vim.opt.cursorcolumn = true
 -- Get a Fat Cursor, because its what I always knew
 vim.opt.guicursor = ""
 
 -- WINBAR - top right file name and modify status, useful for splits
-vim.cmd [[set winbar=%=%m\ %f]] 
+vim.cmd [[set winbar=%=%m\ %f]]
 
 -- LINE NUMBERS
 vim.opt.number = true

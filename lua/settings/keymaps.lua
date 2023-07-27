@@ -45,10 +45,10 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "n", "Nzzzv")
 
 -- Quick fix of movements going through errors as highlighted text
-vim.keymap.set("n", "<C-j>", "<cmd>cNext<CR>zz") 
+vim.keymap.set("n", "<C-j>", "<cmd>cNext<CR>zz")
 vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>j>", "<cmd>cNext<CR>zz") 
-vim.keymap.set("n", "<leader>k>", "<cmd>cprev<CR>zz") 
+vim.keymap.set("n", "<leader>j>", "<cmd>cNext<CR>zz")
+vim.keymap.set("n", "<leader>k>", "<cmd>cprev<CR>zz")
 
 -- THE "+" REGISTER
 -- Yank or Copy to the "Plus" register - (System Clipboard)

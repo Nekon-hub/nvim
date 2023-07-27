@@ -100,5 +100,5 @@ vim.g.nord_bold = false
 
 -- VIM-SUBSTRATA
 -- TODO requires a lualine theme!
-
+-- Otherwise its working really nicely, even the Lualine!
 
