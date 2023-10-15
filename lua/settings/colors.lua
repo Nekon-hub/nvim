@@ -98,7 +98,14 @@ vim.g.nord_bold = false
 -- See READ.me for other settings eg: Lualine and Bufferline
 
 
--- VIM-SUBSTRATA
+-- NVIM-SUBSTRATA
+vim.g.substrata_italic_comments = true
+vim.g.substrata_italic_keywords = false
+vim.g.substrata_italic_booleans = false
+vim.g.substrata_italic_functions = false
+vim.g.substrata_italic_variables = false
+vim.g.substrata_transparent = true
+vim.g.substrata_variant = "brighter"
 -- TODO requires a lualine theme!
 -- Otherwise its working really nicely, even the Lualine!
 

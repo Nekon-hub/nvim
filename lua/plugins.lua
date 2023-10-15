@@ -25,6 +25,11 @@ use {
         end,
 }
 -- Plus TREESITTER PLAYGROUND
+-- TODO - TS Playground is deprecated and this Plugin needs to be removed
+-- In the meantime, leave it here, but use:-
+-- :Inspect
+-- :InspectTree
+-- :EditQuery (Nvim .0.10+) This the point at which TSPlayground can be removed
 use 'nvim-treesitter/playground'
 
 -- LSP - Language Server Protocol
@@ -63,8 +68,8 @@ use({ 'rose-pine/neovim', as = 'rose-pine' })
 -- NO CLOWN FIESTA
 use 'aktersnurra/no-clown-fiesta.nvim'
 
--- VIM-SUBSTRATA
-use 'lunacookies/vim-substrata'
+-- NVIM-SUBSTRATA
+use 'kvrohit/substrata.nvim'
 -- set termguicolors " Only needed in terminals (24-bit colors)
 -- colorscheme substrata
 

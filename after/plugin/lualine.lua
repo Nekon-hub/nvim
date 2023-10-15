@@ -1,9 +1,13 @@
+-- Lualine config 
+-- NB there is no Substrata Lualine theme available
 require('lualine').setup {
   options = {
     icons_enabled = true,
     -- Available themes:- nord | rose-pine | rose-pine-alt
     -- theme = 'rose-pine-alt',
     theme = 'auto',
+    -- There is no Lualine Theme for Substrata but should be easy to create
+    -- Write a Lualine Theme for Substrata and push request
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
