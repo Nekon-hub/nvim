@@ -105,7 +105,7 @@ vim.g.substrata_italic_booleans = false
 vim.g.substrata_italic_functions = false
 vim.g.substrata_italic_variables = false
 vim.g.substrata_transparent = true
-vim.g.substrata_variant = "brighter"
+vim.g.substrata_variant = "default"
 -- TODO requires a lualine theme!
 -- Otherwise its working really nicely, even the Lualine!
 

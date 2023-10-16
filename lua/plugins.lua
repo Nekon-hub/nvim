@@ -24,13 +24,6 @@ use {
             ts_update()
         end,
 }
--- Plus TREESITTER PLAYGROUND
--- TODO - TS Playground is deprecated and this Plugin needs to be removed
--- In the meantime, leave it here, but use:-
--- :Inspect
--- :InspectTree
--- :EditQuery (Nvim .0.10+) This the point at which TSPlayground can be removed
-use 'nvim-treesitter/playground'
 
 -- LSP - Language Server Protocol
 -- USES LSP-ZERO
@@ -79,9 +72,34 @@ use 'kvrohit/substrata.nvim'
 -- ============
 
 
--- lualine
+-- LUALINE
 use {
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
+
+-- NVIM-NEORG
+-- From NO ORG to NEORG, (hopefully!)
+use {
+    "nvim-neorg/neorg",
+    -- tag = "*",
+    ft = "norg",
+    after = "nvim-treesitter", -- You may want to specify Telescope here as well
+    config = function()
+        require('neorg').setup {
+            load = {
+                ["core.defaults"] = {}, -- Loads default behaviour
+                ["core.concealer"] = {}, -- Adds pretty icons to your documents
+                ["core.dirman"] = { -- Manages Neorg workspaces
+                    config = {
+                        workspaces = {
+                            notes = "~/notes",
+                        },
+                    },
+                },
+            },
+        }
+    end
+}
+
 end)
