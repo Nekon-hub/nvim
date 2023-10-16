@@ -82,9 +82,6 @@ use {
 -- From NO ORG to NEORG, (hopefully!)
 use {
     "nvim-neorg/neorg",
-    -- tag = "*",
-    ft = "norg",
-    after = "nvim-treesitter", -- You may want to specify Telescope here as well
     config = function()
         require('neorg').setup {
             load = {
@@ -93,13 +90,15 @@ use {
                 ["core.dirman"] = { -- Manages Neorg workspaces
                     config = {
                         workspaces = {
-                            notes = "~/notes",
+                            notes = "~/Notes",
                         },
                     },
                 },
             },
         }
-    end
+    end,
+    run = ":Neorg sync-parsers",
+    requires = "nvim-lua/plenary.nvim",
 }
 
 end)
