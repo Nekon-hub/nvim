@@ -19,7 +19,7 @@ vim.keymap.set({"i", "v"}, "kj", "<Esc>")
 -- In Visual Mode, be able to move a line or group of lines up or down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
--- The J trick appends line(s) below but cursor moves, this keeps the cursor where it is
+-- The J trick APPENDS the line(s) below, but cursor moves. This keeps the cursor in place
 vim.keymap.set("n", "J", "mzJ`z")
 -- Half page jumps with  C-d, C-u but cursor stays central (zz)
 vim.keymap.set("n", "<C-d>", "<C-d>zz")

@@ -26,7 +26,7 @@ use {
 }
 
 -- LSP - Language Server Protocol
--- USES LSP-ZERO
+-- Uses LSP-ZERO
 use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v2.x',

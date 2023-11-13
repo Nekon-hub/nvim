@@ -8,6 +8,7 @@
 -- syntax = true
 -- &
 -- filetype settings (detect, plugin, indent) on, but uses Treesitter/LSP
+-- &
 -- autoread  = true (reload files modified outside of buffer)
 -- hidden = true (allows unsaved work in buffers)	 
 -- wildmenu = true (list of options on <TAB> completions)
