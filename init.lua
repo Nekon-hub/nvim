@@ -11,12 +11,12 @@
 -- Don't be constrained by the ideas and imagination of others.
 
 -- Plugin Settings
-require("plugins")
+-- require("plugins")
 
 -- Settings - colors, keymaps and options
 -- NB colorscheme settings are in "colors" but scheme is set in "options"
 -- settings.options needs to load after the colorscheme settings in settings.colors
-require("settings.colors")
+-- require("settings.colors")
 require("settings.keymaps")
 require("settings.options")
 

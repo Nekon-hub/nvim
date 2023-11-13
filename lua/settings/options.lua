@@ -23,7 +23,9 @@
 
 -- COLORSCHEME
 vim.opt.termguicolors = true
-vim.cmd [[colorscheme substrata]]
+-- TEMP LOSE COLORSCHEME
+-- vim.cmd [[colorscheme substrata]]
+
 
 -- TABS AND SPACES
 vim.opt.tabstop = 4 			-- 4 spaces to a TAB
