@@ -5,13 +5,15 @@
 -- When switching to Lua based config, the best advise I can offer is "RTFM"
 -- https://neovim.io/doc/user/index.html
 -- https://neovim.io/doc/user/lua.html
--- ":h" is your friend.
+-- ":h" is your friend...
+-- ... and Josean Martinez blog and YouTube will take you a long way!
+
 -- Creating your own INIT.LUA will teach you how Neovim works and how you work.
 -- Copypasta or "oven-ready" Neovim options may limit your Neovim journey.
 -- Don't be constrained by the ideas and imagination of others.
 
--- Plugin Settings
--- require("plugins")
+-- Require the Lazy.lua file with all plugins
+require("lua.lazy")
 
 -- Settings - colors, keymaps and options
 -- NB colorscheme settings are in "colors" but scheme is set in "options"
@@ -19,5 +21,4 @@
 -- require("settings.colors")
 require("settings.keymaps")
 require("settings.options")
-
 
