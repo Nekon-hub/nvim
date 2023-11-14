@@ -12,13 +12,13 @@
 -- Copypasta or "oven-ready" Neovim options may limit your Neovim journey.
 -- Don't be constrained by the ideas and imagination of others.
 
--- Require the Lazy.lua file with all plugins
-require("lua.lazy")
-
 -- Settings - colors, keymaps and options
 -- NB colorscheme settings are in "colors" but scheme is set in "options"
 -- settings.options needs to load after the colorscheme settings in settings.colors
 -- require("settings.colors")
-require("settings.keymaps")
-require("settings.options")
+require("lua.settings.keymaps")
+require("lua.settings.options")
+
+-- Require the Lazy.lua file with all plugins
+require("lua.lazy")
 

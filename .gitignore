@@ -1,3 +1,4 @@
-plugin/packer_compiled.lua
-$XDG_STATE_HOME/
+# Files not included in git commit
+# and git push
+# Lazy-lock.json    -   OF COURSE I SHLOULD BE INCLUDING THIS!
 

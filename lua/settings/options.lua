@@ -23,7 +23,6 @@
 
 -- COLORSCHEME
 vim.opt.termguicolors = true
--- TEMP LOSE COLORSCHEME
 -- vim.cmd [[colorscheme substrata]]
 
 
