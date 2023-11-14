@@ -61,7 +61,7 @@ require("lazy").setup("settings.plugins")
 -- COLORSCHEMES --
 -- ===============
 
--- x SUBSTRATA
+-- X SUBSTRATA
 
 -- ROSE-PINE
 -- NORD

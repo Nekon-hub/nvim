@@ -6,16 +6,23 @@
 -- https://neovim.io/doc/user/index.html
 -- https://neovim.io/doc/user/lua.html
 -- ":h" is your friend...
--- ... and Josean Martinez blog and YouTube will take you a long way!
+-- ... and Josean Martinez's blog and YouTube will take you a long way!
+-- https://www.josean.com/          https://www.youtube.com/@joseanmartinez
 
 -- Creating your own INIT.LUA will teach you how Neovim works and how you work.
 -- Copypasta or "oven-ready" Neovim options may limit your Neovim journey.
 -- Don't be constrained by the ideas and imagination of others.
 
--- Settings - colors, keymaps and options
--- NB colorscheme settings are in "colors" but scheme is set in "options"
--- settings.options needs to load after the colorscheme settings in settings.colors
--- require("settings.colors")
+-- My file structure is a little different,
+-- I don't accept the need for a "UserName" directory, it feels clunky.
+-- Although I suppose my "settings" directory performs the same function.
+-- I find my file structure/tree more understandable.
+
+-- Switch from Packer to Lazy 2023/11/14 
+-- Plugins now loaded automagically.
+-- There may be many plugins, but only those actually needed are loaded.
+
+-- Keymaps and Nvim-Options loaded first to ensure leader-key is set before Lazy load
 require("lua.settings.keymaps")
 require("lua.settings.options")
 
