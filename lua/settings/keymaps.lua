@@ -7,6 +7,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>vv", "<cmd>so ~/.config/nvim/init.lua<cr>")
 -- TODO intermittent working, something to do with buffers already loaded.
 -- Possibly the greatest mystery in Neovim. HINT Plenary has a RELOAD function
+-- NOTE - lazy.nvim doesnt support reload in place!?
 
 -- ESCAPE - JJ, KK and the JK/KJ roll
 vim.keymap.set({"i", "v"}, "jj", "<Esc>")

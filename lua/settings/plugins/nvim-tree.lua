@@ -1,4 +1,6 @@
 -- nvim-tree settings
+-- TODO set the "tree expand" command to exclude the git folder
+
 return {
   "nvim-tree/nvim-tree.lua",
   dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -18,6 +20,7 @@ return {
     nvimtree.setup({
       view = {
         width = 35,
+        number = true,
         relativenumber = true,
       },
       -- change folder arrow icons
@@ -28,8 +31,8 @@ return {
         icons = {
           glyphs = {
             folder = {
-              arrow_closed = "", -- arrow when folder is closed
-              arrow_open = "", -- arrow when folder is open
+              -- arrow_closed = "", -- arrow when folder is closed
+              -- arrow_open = "", -- arrow when folder is open
             },
           },
         },
@@ -48,7 +51,7 @@ return {
         custom = { ".DS_Store" },
       },
       git = {
-        ignore = false,
+        ignore = true,
       },
     })
 
