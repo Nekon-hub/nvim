@@ -25,9 +25,9 @@
 -- There may be many plugins, but only those actually needed are loaded.
 
 -- Keymaps and Nvim-Options loaded first to ensure leader-key is set before Lazy load
-require("settings.keymaps")
-require("settings.options")
+require("lua.settings.keymaps")
+require("lua.settings.options")
 
 -- Require the Lazy.lua file with all plugins
-require("lazy")
+require("lua.lazy")
 
