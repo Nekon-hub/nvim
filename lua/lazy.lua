@@ -1,7 +1,7 @@
 -- LAZY.NVIM FILE
 -- is simply a list of my installed plugins and their dependecies.
--- Plugins are configured and initiated...
--- ...(including keymaps) in lua/settings/plugins/"plugin"
+-- Plugins are configured and initiated (including keymaps)...
+-- in lua/settings/plugins/"plugin"
 
 -- First bootstrap folke/lazy.nvim...
 -- (Packer is no more)

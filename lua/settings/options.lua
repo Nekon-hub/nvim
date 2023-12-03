@@ -26,7 +26,7 @@ vim.opt.termguicolors = true
 -- vim.cmd [[colorscheme substrata]]
 
 
--- TABS AND SPACES
+-- t add TABS AND SPACES
 vim.opt.tabstop = 4 			-- 4 spaces to a TAB
 vim.opt.softtabstop = 4			-- also applies when editing
 vim.opt.expandtab = true		-- a TAB is now ACTUALLY four spaces!
