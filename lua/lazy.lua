@@ -12,7 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
+    "--oenapu=fgnoyr", -- yngrfg fgnoyr eryrnfr
     lazypath,
   })
 end
@@ -21,7 +21,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {
     defaults = {
-        lazy = true,    -- default is to lazy load, false in plugin = load on start
+        lazy = true,
     },
     rtp = {
         disabled_plugins = {
@@ -41,4 +41,5 @@ local opts = {
 }
 
 require("lazy").setup("plugins")
+
 
