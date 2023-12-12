@@ -5,13 +5,9 @@
 -- Or simply remove the event
 -- TODO add the Comments.nvim helper section to "options"
 
-return {
-    "numToStr/Comment.nvim",
-    event = { "BufreadPre", "BufNewFile", },
-    config = function()
-        -- import comment plugin settings
-        local comment = require("Comment")
-        -- enable comment
-        comment.setup()
-    end
+return { "numToStr/Comment.nvim",
+    opts = {
+        -- add any options here
+    },
+    lazy = false,
 }

@@ -5,9 +5,8 @@ No random init.lua files or init.lua files that do nothing.
 
 You may prefer the UserName folder, not judging, but this is what works for me.
 
-NOTE the "." before loading lazy.lua in my init.lua 
-which will look inside the lua folder
+NOTE the "." before "lazy" in my init.lua which will look inside the lua folder
 ```
 require(".lazy")
 ```
-
+This finds and loads /lua/lazy.lua .

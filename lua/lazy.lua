@@ -21,7 +21,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {
     defaults = {
-        lazy = true,
+        lazy = false,
     },
     rtp = {
         disabled_plugins = {
