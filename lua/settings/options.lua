@@ -24,6 +24,7 @@
 -- COLORSCHEME
 vim.opt.termguicolors = true
 -- vim.cmd [[colorscheme substrata]]
+-- now loaded using priority = 1000 in the plugins/substrata.lua file
 
 
 -- TABS AND SPACES

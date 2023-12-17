@@ -3,6 +3,7 @@
 -- TODO taken from Josean, but "event" is daft, change to keymap gcc
 -- BufreadPre would always be triggered, or you are in a Bufnewfile!
 -- Or simply remove the event
+
 -- TODO add the Comments.nvim helper section to "options"
 
 return { "numToStr/Comment.nvim",
