@@ -16,11 +16,11 @@ return {
       treesitter.setup({ -- enable syntax highlighting
         highlight = {
           enable = true,
-          additional_vim_rgex_highlighting = false,  
+          additional_vim_rgex_highlighting = false,
         },
         -- enable indentation
-        indent = { 
-            enable = true, 
+        indent = {
+            enable = true,
         },
         -- enable autotagging (w/ nvim-ts-autotag plugin)
         autotag = {
@@ -44,6 +44,10 @@ return {
           "haskell",
           "json",
           "sql",
+          "twig",
+          "c",
+          "cpp",
+          "norg",
         },
         incremental_selection = {
           enable = true,

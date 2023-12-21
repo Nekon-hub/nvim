@@ -10,3 +10,7 @@ NOTE the "." before "lazy" in my init.lua which will look inside the lua folder
 require(".lazy")
 ```
 This finds and loads /lua/lazy.lua .
+
+Probably not as many plugins as many people. My Neovim is not an IDE, 
+but takes the parts of an IDE that feel useful to me. 
+Most plugins are pretty close to default in setup.
