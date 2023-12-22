@@ -27,7 +27,7 @@ local opts = {
         disabled_plugins = {
             "gzip",
             "matchit",
-            -- "matchparen",
+            "matchparen",
             "netrwPlugin",
             "tarPlugin",
             "tohtml",
@@ -42,4 +42,4 @@ local opts = {
 
 require("lazy").setup("plugins")
 
-
+-- TODO see which plugins can be made to lazy load
