@@ -1,6 +1,6 @@
 -- NEORG - An Organised Future
 -- Everything else is to get me to this place... the reinstall of NEORG...
--- a genuine revelation in organising my thoughts, my actions and my life!
+-- a genuine revelation, in organising my thoughts, my actions and my life!
 
 return {
     "nvim-neorg/neorg",
@@ -29,6 +29,8 @@ return {
                     },
                     -- TODO work with dates, then...
                     -- TODO add ["core.ui.calendar"] module for date UI
+                    ["core.highlights"] = {},   -- Manage highlight groups here
+                    ["core.integrations.treesitter"] = {},
                 }
             -- TODO add... run = ":Neorg sync-parsers", replaces "build ="???
             }

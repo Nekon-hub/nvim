@@ -90,4 +90,3 @@ vim.cmd [[set formatoptions-=o]]
 -- Neovim adds new line comment symbols after every <CR> at EOL
 -- But when it works its very laggy which means this is NOT and elegant solution anyway.
 
-

@@ -1,7 +1,7 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    lazy = true,
+    lazy = false,
     event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
     dependencies = {
@@ -16,7 +16,7 @@ return {
       treesitter.setup({ -- enable syntax highlighting
         highlight = {
           enable = true,
-          additional_vim_rgex_highlighting = false,
+          additional_vim_rgex_highlighting = true,
         },
         -- enable indentation
         indent = {
@@ -30,7 +30,6 @@ return {
         ensure_installed = {
           "html",
           "css",
-          "markdown",
           "bash",
           "lua",
           "vim",
@@ -47,7 +46,6 @@ return {
           "twig",
           "c",
           "cpp",
-          "norg",
         },
         incremental_selection = {
           enable = true,

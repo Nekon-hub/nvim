@@ -81,6 +81,7 @@ return {
                     { name = "buffer" },
                     { name = "path" },
                     { name = "nvim-lua" },
+                    { name = "neorg" },
                     -- more sources
                 },
             })
