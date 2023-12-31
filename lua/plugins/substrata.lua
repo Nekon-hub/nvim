@@ -15,6 +15,8 @@ return {
 	vim.g.substrata_italic_variables = false
 	vim.g.substrata_transparent = true
 	vim.g.substrata_variant = "default"
+    -- Solve Neorg Bold and Italic problem
+    -- TODO Use the Neorg Highlights group to create styles for Bold and Italic
     end,
 }
 

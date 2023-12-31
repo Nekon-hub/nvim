@@ -1,6 +1,6 @@
 -- NEORG - An Organised Future
--- Everything else is to get me to this place... the reinstall of NEORG...
--- a genuine revelation, in organising my thoughts, my actions and my life!
+-- When your TODO LIST and Neovim combine, its like magic in your fingertips!
+-- a genuine revelation in remembering and organising all of the things!
 
 return {
     "nvim-neorg/neorg",
@@ -14,25 +14,32 @@ return {
                     ["core.dirman"] = { -- Manages Neorg workspaces
                         config = {
                             workspaces = {
-                                main = "Notes/Main",
                                 projects = "~/Notes/Projects",
                                 home = "~/Notes/Home",
-                                journal = "~/Notes/Journal",
                                 archive = "~/Notes/Archive",
+                                journal = "~/Notes",
                             },
                         },
                     },
-                    ["core.completion"] = {  -- A wrapper to interface with CMP
+                    ["core.mode"] = {},
+                    ["core.integrations.treesitter"] = {},
+                    ["core.completion"] = {
                         config = {
                             engine = "nvim-cmp",
+                            name = "[neorg]",
                         },
                     },
-                    -- TODO work with dates, then...
-                    -- TODO add ["core.ui.calendar"] module for date UI
-                    ["core.highlights"] = {},   -- Manage highlight groups here
-                    ["core.integrations.treesitter"] = {},
-                }
-            -- TODO add... run = ":Neorg sync-parsers", replaces "build ="???
+                    ["core.journal"] = {
+                        config = {
+                            journal_folder = "Journal",
+                            template_name = {"template.norg"},
+                        },
+                    },
+                    ["core.neorgcmd"] = {},
+                    ["core.neorgcmd.commands.module.list"] = {},
+                    ["core.ui.calendar"] = {},
+                },
             }
         end,
+
 }

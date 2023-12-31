@@ -1,6 +1,6 @@
 -- INIT.LUA is the starting point for loading my neovim config
 
--- Thanks to DT, Doug Black, Ellen Gummeson, Daniel Miessler, Drew Neil et al in the vimrc and init.vim days.
+-- Thanksto DT, Doug Black, Ellen Gummeson, Daniel Miessler, Drew Neil et al in the vimrc and init.vim days.
 -- Thanks to Primeagen, TJ, Bashbunni, Asbjorn Haaland and others for promoting a Lua-Life.
 -- When switching to Lua based config, the best advice I can offer is "RTFM"
 -- https://neovim.io/doc/user/index.html
@@ -15,7 +15,7 @@
 
 -- My file structure is a little different.
 -- I don't like the "UserName" directory, it feels clunky and unnecessary.
--- Read the Nvim Lua Docs, there are better ways to do it.
+-- Read the Nvim Lua Docs, there may be better ways to do it.
 
 -- Switch from Packer to Lazy 2023/11/14 
 -- Plugins now loaded automagically.
