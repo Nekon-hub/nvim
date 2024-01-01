@@ -14,10 +14,11 @@ return {
                     ["core.dirman"] = { -- Manages Neorg workspaces
                         config = {
                             workspaces = {
-                                projects = "~/Notes/Projects",
-                                home = "~/Notes/Home",
-                                archive = "~/Notes/Archive",
-                                journal = "~/Notes",
+                                notes = "~/Neorg",
+                                journal = "~/Neorg/Journal",
+                                projects = "~/Neorg/Projects",
+                                archive = "~/Neorg/Archive",
+                                home = "~/Neorg/Home",
                             },
                         },
                     },
@@ -32,7 +33,6 @@ return {
                     ["core.journal"] = {
                         config = {
                             journal_folder = "Journal",
-                            template_name = {"template.norg"},
                         },
                     },
                     ["core.neorgcmd"] = {},
