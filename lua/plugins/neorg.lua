@@ -37,7 +37,7 @@ return {
                     },
                     ["core.neorgcmd"] = {},
                     ["core.neorgcmd.commands.module.list"] = {},
-                    ["core.ui.calendar"] = {},
+                    -- ["core.ui.calendar"] = {},
                 },
             }
         end,

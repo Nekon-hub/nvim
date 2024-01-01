@@ -18,7 +18,8 @@ return {
             "hrsh7th/cmp-nvim-lua",
             -- For Snippets
             "L3MON4D3/LuaSnip",
-            "saadparwaiz1/cmp_luasnip"
+            "saadparwaiz1/cmp_luasnip",
+            "rafamadriz/friendly-snippets",
         },
         -- Configure LSP-ZERO - one ring to rule them all!
         config = function()
@@ -63,8 +64,8 @@ return {
                     end
                 },
                 window = {
-                -- completion = cmp.config.window.bordered(),
-                -- documentation = cmp.config.window.bordered(),
+                completion = cmp.config.window.bordered(),
+                documentation = cmp.config.window.bordered(),
                 },
                 mapping = cmp.mapping.preset.insert({
                     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
@@ -76,7 +77,7 @@ return {
                     ["<CR>"] = cmp.mapping.confirm({ select = true }),
                 }),
                 sources = {
-                    { name = "nvim-lsp" },
+                    { name = "nvim_lsp" },
                     { name = "luasnip" },
                     { name = "buffer" },
                     { name = "path" },
