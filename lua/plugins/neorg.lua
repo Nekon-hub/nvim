@@ -31,10 +31,11 @@ return {
                         },
                     },
                     ["core.journal"] = {
-                        config = {
-                            journal_folder = "Journal",
-                        },
+                        -- config = {
+                            -- journal_folder = "Journal",
+                        -- },
                     },
+                    ["core.summary"] = {},
                     ["core.neorgcmd"] = {},
                     ["core.neorgcmd.commands.module.list"] = {},
                     -- ["core.ui.calendar"] = {},
