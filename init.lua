@@ -5,7 +5,7 @@
 -- When switching to Lua based config, the best advice I can offer is "RTFM"
 -- https://neovim.io/doc/user/index.html
 -- https://neovim.io/doc/user/lua.html
--- ":h" is your friend...
+-- ":h" is your best friend...
 -- Josean Martinez and The Rad Lectures YouTube channels are great resources...
 -- https://www.youtube.com/@joseanmartinez and https://www.youtube.com/@theradlectures
 
@@ -15,7 +15,7 @@
 
 -- My file structure is a little different.
 -- I don't like the "UserName" directory, it feels clunky and unnecessary.
--- Read the Nvim Lua Docs, there may be better ways to do it.
+-- Read the Nvim Lua Docs, may be better ways to do it.
 
 -- Switch from Packer to Lazy 2023/11/14 
 -- Plugins now loaded automagically.
