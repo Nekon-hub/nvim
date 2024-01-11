@@ -11,7 +11,7 @@ vim.keymap.set("n", "<leader>vv", "<cmd>so ~/.config/nvim/init.lua<cr>")
 
 -- ESCAPE - JJ, KK and the JK/KJ roll
 vim.keymap.set({"i", "v"}, "jj", "<Esc>")
--- vim.keymap.set({"i", "v"}, "kk", "<Esc>" -- Sod's Law... some Finnish violinists have "kk"
+-- vim.keymap.set({"i", "v"}, "kk", "<Esc>" Sod's Law, a Finnish violinist "..kk.."
 vim.keymap.set({"i", "v"}, "jk", "<Esc>")
 vim.keymap.set({"i", "v"}, "kj", "<Esc>")
 
