@@ -15,7 +15,7 @@
 
 -- My file structure is a little different.
 -- I don't like the "UserName" directory, it feels clunky and unnecessary.
--- Read the Nvim Lua Docs, may be better ways to do it.
+-- Read the Nvim Lua Docs, there may be better ways to do it.
 
 -- Switch from Packer to Lazy 2023/11/14 
 -- Plugins now loaded automagically.

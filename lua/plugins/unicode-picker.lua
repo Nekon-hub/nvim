@@ -1,4 +1,4 @@
--- Neorg  Journal means that it would useful to easilly access unicode
+-- Neorg Journal means that it would useful to easilly access unicode
 -- Hopefully this will do the job nicely
 
 return {
@@ -9,5 +9,4 @@ return {
         local unicode_picker = require("unicode_picker")
         vim.keymap.set("i", "<C-u>", unicode_picker.unicode_chars, {})
     end
-
 }

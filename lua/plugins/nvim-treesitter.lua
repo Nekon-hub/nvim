@@ -46,6 +46,7 @@ return {
                     "twig",
                     "c",
                     "cpp",
+                    "md",
                 },
                 incremental_selection = {
                     enable = true,
